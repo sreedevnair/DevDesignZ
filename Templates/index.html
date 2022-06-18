@@ -1,0 +1,566 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{{website.title}}</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'images/icons/icon.png' %}">
+        <!-- Bootstrap -->
+        <link href="{% static 'css/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+        <!-- Custom style -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <!-- Animated -->
+        <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/animated-headline.css' %}" rel="stylesheet">
+        <!-- Shuffle -->
+        <link href="{% static 'css/custom-shuffle.css' %}" rel="stylesheet">
+        <!-- Slick -->
+        <link href="{% static 'css/slick.css' %}" rel="stylesheet">
+        <link href="{% static 'css/slick-theme.css' %}" rel="stylesheet">
+        <link href="{% static 'css/custom-slick.css' %}" rel="stylesheet">
+        <!-- Section animation -->
+        <link href="{% static 'css/aos.css' %}" rel="stylesheet">
+        <!-- Responsive -->
+        <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+        <link href="{% static 'fonts/materialdesign-web/css/materialdesignicons.min.css' %}" rel="stylesheet">
+        <link href="{% static 'fonts/flaticon/flaticon.css' %}" rel="stylesheet">
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body id="page-top">
+
+        <!-- START LOADER -->
+        <div class="loader-fix theme-bg-secondary-light">
+            <div class="loader-center">
+                <div class="loader-dots"></div>
+            </div>
+        </div>
+        <!-- END LOADER -->
+
+        <!-- START NAVIGATION -->
+        <div id="navigation">
+            <nav class="navbar navbar-expand-lg p-0" id="mainNav">
+                <div class="container-fluid">
+                    <a class="logo h3 js-scroll-trigger" href="#page-top">
+                        <img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ">
+                        Dev DesignZ
+                    </a>
+                    <button class="navbar-toggler navbar-toggler-right theme-btn theme-btn-default" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span>
+                            <i class="mdi mdi-menu mdi-24px"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
+                            <li><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                            <li><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                            <li><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                            <li><a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu dropdown-menu-right animate__animated animate__fadeIn">
+                                    <li><a class="dropdown-item js-scroll-trigger" href="#blog">Latest Blogs</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'blogs' %}">Our Blog Page </a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- END NAVIGATION -->
+
+        <!-- START SLIDER -->
+        <div id="slider" class="aos-item slider-bg theme-bg-secondary-light" data-aos="fade-in">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-6">
+                                <div class="slider-item animate__animated animate__fadeInLeft">
+                                    <div class="slider-item-left">
+                                        <h3><img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ">{{website.home_title}}</h3>
+                                        <h1>{{website.home_heading}}</h1>
+                                        <h1 class="cd-headline clip is-full-width">
+                                            <span class="cd-words-wrapper theme-text-default">
+                                                <b class="is-visible">{{website.home_heading_1}}.</b>
+                                                <b>{{website.home_heading_2}}.</b>
+                                                <b>{{website.home_heading_3}}.</b>
+                                            </span>
+                                        </h1>
+                                        <p>{{website.home_description}}</p>
+                                        <div class="slider-btn">
+                                            <a href="#services" class="theme-btn theme-btn-default js-scroll-trigger">
+                                                Get Started
+                                                <i class="flaticon-double-right-arrows-angles"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="slider-item animate__animated animate__fadeInRight">
+                                    <div class="slider-item-right">
+                                        <img src="{% static 'images/slider-img-1.png' %}" alt="Dev DesignZ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SLIDER -->
+
+        <!-- START ABOUT -->
+        <div id="about" class="aos-item" data-aos="fade-in">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-5">
+                                <div class="about-item-left about-item">
+                                    <img src="{% static 'images/about-img-1.jpg' %}" alt="About Dev DesignZ">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="about-item-right about-item">
+                                    <h5 class="theme-text-default"><img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ">{{website.who_are_we_icon_heading}}</h5>
+                                    <h1 class="about-title">{{website.who_are_we_heading_1}}</h1>
+                                    <h1 class="about-title-second theme-text-default">{{website.who_are_we_heading_2}}</h1>
+                                    <p>{{website.who_are_we_text}}</p>
+                                    <ul class="about-list">
+                                        <li><i class="mdi mdi-check theme-text-default"></i> {{website.who_are_we_check_1}}</li>
+                                        <li><i class="mdi mdi-check theme-text-default"></i> {{website.who_are_we_check_2}}</li>
+                                    </ul>
+                                    <a href="#contact" class="theme-btn theme-btn-default js-scroll-trigger">Get Started <i class="flaticon-double-right-arrows-angles"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END ABOUT -->
+
+        <!-- START SERVICES -->
+        <div id="services" class="theme-bg-secondary-light aos-item" data-aos="fade-in">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row service-item-right">
+                                    <div class="col-lg-4">
+                                        <div class="section-header">
+                                            <h5 class="section-short-title theme-text-default"><img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ"> {{website.service_icon_heading}}</h5>
+                                            <h1 class="section-title">{{website.service_heading_1}} <span>{{website.service_heading_2}}</span></h1>
+                                            <p>{{website.service_text}}</p>
+                                        </div>
+                                    </div>
+                                    {% for service in Service %}
+                                    <div class="col-lg-4">
+                                        <div class="service-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div>
+                                                        <img src="{{service.Icon.url}}" alt="{{service.Name}}">
+                                                    </div>
+                                                    <h3>{{service.Name}}</h3>
+                                                    <p>{{service.Description}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SERVICES -->
+
+
+        <!-- START TEAM -->
+        <div id="team" class="aos-item" data-aos="fade-in">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section-warp">
+                                    <div class="section-header">
+                                        <h1 class="section-title"><img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ"> {{website.team_heading_1}} <span>{{website.team_heading_2}}</span></h1>
+                                        <p>{{website.team_text}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% for team in Teams %}
+                            <div class="col-lg-4">
+                                <div class="team-item">
+                                    <div class="theme-bg-secondary-light">
+                                        <div class="team-img">
+                                            <img src="{{team.Photo.url}}" alt="{{team.Name}} | {{team.Designation}}">
+                                            <ul class="social-media-icons">
+                                                {% if team.Instagram %}
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="mdi mdi-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                {% endif %}
+                                                {% if team.LinkedIn %}
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="mdi mdi-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                                {% endif %}
+                                                {% if team.Twitter %}
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="mdi mdi-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                {% endif %}
+                                                {% if team.Facebook %}
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="mdi mdi-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                {% endif %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="team-content">
+                                        <div class="card'">
+                                            <div class="card-body">
+                                                <h3>{{team.Name}}</h3>
+                                                <p>{{team.Designation}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END TEAM -->
+
+        <!-- START TESTIMONIALS -->
+        <div id="testimonials" class="aos-item theme-bg-secondary-light" data-aos="fade-in">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-warp">
+                            <div class="section-header">
+                                <h1 class="section-title"><img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ"> {{website.testimonial_heading_1}} <span>{{website.testimonial_heading_2}}</span></h1>
+                                <p>{{website.testimonial_text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row testimonials-carousel">
+                                    
+                                    {% for feedback in Testimonials %}
+                                    <div>
+                                        <div class="testimonial-item">
+                                            <div class="testimonial-warp">
+                                                <div class="testimonial-icon">
+                                                    <img src="{{feedback.Photo.url}}" alt="{{feedback.Name}} | {{feedback.Designation}}">
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <h4>{{feedback.Name}}</h4>
+                                                    <p>{{feedback.Designation}}</p>
+                                                    <h5>{{feedback.Review}}</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END TESTIMONIALS -->
+
+        <!-- START BLOG -->
+        <div id="blog" class="aos-item" data-aos="fade-in">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section-warp">
+                                    <div class="section-header">
+                                        <h1 class="section-title"><img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ"> Latest Updated <span>Blogs</span></h1>
+                                        <p>{{website.blog_text}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% for blog in Blogs %}
+                            <div class="col-lg-4">
+                                <div class="blog-item">
+                                    <div class="blog-img">
+                                        <img src="{{blog.Image.url}}" alt="{{blog.Title}}">
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="blog-date">
+                                                    <ul class="blog-post-list">
+                                                        <li><a>{{blog.Date}}</a></li>
+                                                    </ul>
+                                                </div>
+                                                <h4><a href="blog/{{blog.slug}}">{{blog.Title}}</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END BLOG -->
+
+        <!-- START CONTACT -->
+        <div id="contact" class="theme-bg-secondary-light aos-item" data-aos="fade-in">
+            <div class="container">
+                <div class="row">
+                    {% if message_name %}
+                    <div class="col-lg-12">
+                        <div class="section-warp">
+                            <div class="section-header">
+                                <h1 class="section-title"><img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ"> THANK YOU {{message_name}} !!!</h1>
+                                <p>We have received your email and will respond back shortly </p>
+                            </div>
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="col-lg-12">
+                        <div class="section-warp">
+                            <div class="section-header">
+                                <h1 class="section-title"><img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ"> {{website.contact_heading}}</h1>
+                                <p>{{website.contact_desc}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="contact-info-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="icon-rotate icon-rotate-center icon-rotate-light">
+                                                        <i class="flaticon-telephone flaticon-icon flaticon-icon-lg"></i>
+                                                    </div>
+                                                    <h3>Phone</h3>
+                                                    <a href="tel:{{website.contact_phone}}">{{website.contact_phone}}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="contact-info-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="icon-rotate icon-rotate-center icon-rotate-light">
+                                                        <i class="flaticon-email flaticon-icon flaticon-icon-lg"></i>
+                                                    </div>
+                                                    <h3>Email</h3>
+                                                    <a  href="mailto:{{website.contact_email}}" >{{website.contact_email}}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="contact-info-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="icon-rotate icon-rotate-center icon-rotate-light">
+                                                        <i class="flaticon-location flaticon-icon flaticon-icon-lg"></i>
+                                                    </div>
+                                                    <h3>Location</h3>
+                                                    <p>{{website.contact_address}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="contact-item">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <form class="col-form" action="{% url 'index' %}" method="post">
+                                                {% csrf_token %}
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="name" placeholder="Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="phone" placeholder="Phone">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="email" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" name="subject" placeholder="Subject">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group">
+                                                            <textarea class="form-control" name="message" rows="4" placeholder="Messages"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <button type="submit" class="theme-btn theme-btn-default">Submit <i class="flaticon-double-right-arrows-angles"></i></button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <!-- END CONTACT -->
+
+        <!-- START CLIENTS -->
+        <div id="clients" class="aos-item" data-aos="fade-in">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row clients-carousel">
+                            {% for client in Clients %}
+                            <div>
+                                <div class="clients-item">
+                                    <a href="#">
+                                        <img src="{{client.Image.url}}" class="theme-tooltip" title="{{client.Company}}" data-toggle="tooltip" data-placement="top" alt="{{client.Company}}">
+                                    </a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CLIENTS -->
+
+        <!-- START FOOTER -->
+        <div id="footer" class="theme-bg-secondary aos-item" data-aos="fade-in">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-3">
+                                <div class="footer-item">
+                                    <a class="logo h3 js-scroll-trigger" href="#page-top">
+                                        <img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ">
+                                        Dev DesignZ
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="footer-item">
+                                    <p>&copy; 2021 Dev DesignZ | All Rights Reserved.</p>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="col-lg-4">
+                                <div class="footer-item">
+                                    <ul class="social-media-icons">
+                                        <li>
+                                            <a href="#" class="icon-bg icon-bg-sm theme-btn-default">
+                                                <i class="mdi mdi-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="icon-bg icon-bg-sm theme-btn-default">
+                                                <i class="mdi mdi-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="icon-bg icon-bg-sm theme-btn-default">
+                                                <i class="mdi mdi-pinterest"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="icon-bg icon-bg-sm theme-btn-default">
+                                                <i class="mdi mdi-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+
+        <!-- START BACK TO TOP -->
+        <div id="backtotop">
+            <a href="#page-top" class="js-scroll-trigger theme-btn-default icon-bg icon-bg-md">
+                <i class="flaticon-double-right-arrows-angles"></i>
+            </a>
+        </div>
+        <!-- END BACK TO TOP -->
+
+        <!-- Bootstrap core JS-->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <!-- Third party plugin JS-->
+        <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+        <!-- Animated headline -->
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/modernizr.js' %}"></script>
+        <!-- Shuffle -->
+        <script src="{% static 'js/shuffle.min.js' %}"></script>
+        <script src="{% static 'js/custom-shuffle.js' %}"></script>
+        <!-- Slick -->
+        <script src="{% static 'js/slick.min.js' %}"></script>
+        <!-- Section animation -->
+        <script src="{% static 'js/aos.js' %}"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/custom-script.js' %}"></script>
+        
+    </body>
+</html>

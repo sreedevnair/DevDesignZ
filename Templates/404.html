@@ -1,0 +1,180 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>404 | Not Found</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'images/icons/icon.png' %}">
+        <!-- Bootstrap -->
+        <link href="{% static 'css/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+        <!-- Custom style -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <!-- Animated -->
+        <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/animated-headline.css' %}" rel="stylesheet">
+        <!-- Shuffle -->
+        <link href="{% static 'css/custom-shuffle.css' %}" rel="stylesheet">
+        <!-- Slick -->
+        <link href="{% static 'css/slick.css' %}" rel="stylesheet">
+        <link href="{% static 'css/slick-theme.css' %}" rel="stylesheet">
+        <link href="{% static 'css/custom-slick.css' %}" rel="stylesheet">
+        <!-- Section animation -->
+        <link href="{% static 'css/aos.css' %}" rel="stylesheet">
+        <!-- Responsive -->
+        <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+        <link href="{% static 'fonts/materialdesign-web/css/materialdesignicons.min.css' %}" rel="stylesheet">
+        <link href="{% static 'fonts/flaticon/flaticon.css' %}" rel="stylesheet">
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body id="page-top">
+
+        <!-- START LOADER -->
+        <div class="loader-fix theme-bg-secondary-light">
+            <div class="loader-center">
+                <div class="loader-dots"></div>
+            </div>
+        </div>
+        <!-- END LOADER -->
+
+        <!-- START NAVIGATION -->
+        <div id="navigation">
+            <nav class="navbar navbar-expand-lg p-0" id="mainNav">
+                <div class="container-fluid">
+                    <a class="logo h3" href="?">
+                        <img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ">
+                        Dev DesignZ
+                    </a>
+                    <button class="navbar-toggler navbar-toggler-right theme-btn theme-btn-default" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span>
+                            <i class="mdi mdi-menu mdi-24px"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li><a class="nav-link" href="/">Home</a></li>
+                            <li><a class="nav-link" href="/#about">About</a></li>
+                            <li><a class="nav-link" href="/#services">Services</a></li>
+                            <li><a class="nav-link" href="/#team">Team</a></li>
+                            <li><a class="nav-link" href="/#testimonials">Testimonials</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu dropdown-menu-right animate__animated animate__fadeIn">
+                                    <li><a class="dropdown-item" href="/#blog">Blog</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'blogs' %}">Our Blog Page</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-link" href="/#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- END NAVIGATION -->
+
+        <!-- START BREADCRUMB -->
+        <div id="breadcrumb" class="theme-bg-secondary-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1 class="section-title"><img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ"> 404 <span>Error</span></h1>
+                                <div class="breadcrumb-warp">
+                                    <nav>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                            <li class="breadcrumb-item active">Error</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END BREADCRUMB -->
+
+        <!-- START PAGE NOT FOUND -->
+        <div id="page-not-found">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-7">
+                                <div class="page-not-found-item page-not-found-item-right">
+                                    <img class="w-100" src="{% static 'images/404-error-1.jpg' %}" alt="404 | Dev DesignZ">
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="page-not-found-item">
+                                     <h1 class="section-title"><img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ"> Oops <span>Page Not Found</span></h1>
+                                     <a href="/" class="theme-btn theme-btn-default">Return to Back <i class="flaticon-double-right-arrows-angles"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE NOT FOUND -->
+
+        <!-- START FOOTER -->
+        <div id="footer" class="theme-bg-secondary aos-item" data-aos="fade-in">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-3">
+                                <div class="footer-item">
+                                    <a class="logo h3" href="/">
+                                        <img src="{% static 'images/icons/icon.png' %}" alt="Dev DesignZ">
+                                        Dev DesignZ
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="footer-item">
+                                    <p>&copy; 2021 Dev DesignZ | All Rights Reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+
+        <!-- START BACK TO TOP -->
+        <div id="backtotop">
+            <a href="#page-top" class="js-scroll-trigger theme-btn-default icon-bg icon-bg-md">
+                <i class="flaticon-double-right-arrows-angles"></i>
+            </a>
+        </div>
+        <!-- END BACK TO TOP -->
+
+        <!-- Bootstrap core JS-->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <!-- Third party plugin JS-->
+        <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+        <!-- Animated headline -->
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/modernizr.js' %}"></script>
+        <!-- Shuffle -->
+        <script src="{% static 'js/shuffle.min.js' %}"></script>
+        <!-- Slick -->
+        <script src="{% static 'js/slick.min.js' %}"></script>
+        <!-- Section animation -->
+        <script src="{% static 'js/aos.js' %}"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/custom-script.js' %}"></script>
+        
+    </body>
+</html>
